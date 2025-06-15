@@ -1,0 +1,75 @@
+@layer components {
+  .header-biru {
+    @apply bg-black bg-opacity-50 text-white px-4 py-4 grid grid-cols-3 items-center 
+    shadow-[0_10px_25px_rgba(0,0,0,0.3)] fixed top-0 left-0 w-full z-50 backdrop-blur-md;
+  }
+
+  .judul {
+    @apply text-[65px] font-bold mr-6 text-center;
+  }
+
+  .kiri {
+    @apply flex items-center gap-6 ml-7;
+  }
+
+  .nav1 {
+    @apply justify-start flex pl-[90px] ml-[90px];
+  }
+
+  .nav1 ul {
+    @apply flex gap-4 text-[20px] 	;
+  }
+
+  .nav2 {
+    @apply justify-end flex;
+  }
+
+  .nav2 ul {
+    @apply flex items-center gap-4 text-[20px];
+  }
+
+  .gambar1 {
+    @apply w-[60px] h-[60px] mr-[40px];
+  }
+
+  .main {
+    @apply pt-[90px]; /* kasih padding top biar nggak ketiban header */
+  }
+
+  .snap-container {
+    @apply h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar relative;
+  }
+
+  .snap-section {
+    @apply h-screen snap-start flex items-center justify-center text-4xl font-bold relative;
+  }
+
+  footer {
+    @apply fixed bottom-0 left-0 w-full z-50 backdrop-blur-md bg-opacity-50 bg-gray-800 text-white p-4 text-center text-sm;
+  }
+
+  /* Hilangkan scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    @apply absolute top-1/2 -translate-y-1/2 w-[5%];
+  }
+
+  .carousel-control-prev {
+    @apply left-0;
+  }
+
+  .carousel-control-next {
+    @apply right-0;
+  }
+
+   .link-putih {
+    @apply text-white no-underline hover:underline hover:decoration-white pl-8	;
+  }
+}
