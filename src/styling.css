@@ -72,4 +72,12 @@
    .link-putih {
     @apply text-white no-underline hover:underline hover:decoration-white pl-8	;
   }
+
+  .transform-center {
+    transform: translate(-50%, -50%);
+  }
+  
+  .max-w-text {
+    max-width: 800px;
+  }
 }
